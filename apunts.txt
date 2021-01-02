@@ -1,0 +1,71 @@
+** Sockets **
+# Websockets: es una tecnología que hace posible establecer una conexión continua full-duplex, entre un cliente y servidor.
+# A diferencia del websockets, con socket.io podemos tener por defecto: Namespaces, salas o grupos, emitir a grupos o a individuos, nos ayuda con información de latencia.
+# Glosario:
+# Servidor: Backend en Node.
+# Socket: Identificador de la conexión al servidor full duplex.
+# Emitir: Cliente que emite un evento.
+# Evento: Acción que el cliente o el servidor disparan.
+# Escuchar: Recibir la información de un evento.
+# io.on('connection') -> dispositivo que se conecto al socket server.
+# socket.on -> para escuchar
+# socket.emit -> para enviar. Solo se emite al cliente o servidor el mensaje. En canvio io.emit -> se envia a todos los que estan conectados.
+# socket.connected -> indica si esta conectado.
+# socket.broadcast.emit -> se envia a todos menos al responsable de emitir el socket.
+# socket.join -> unir un socket a una sala. this.io.to -> enviar a todos los clientes que estan conectados a esa sala.
+
+** Primer socket server (minichat) **
+# npm init
+# npm i socket.io
+# npm i express
+# npm i dotenv
+# npm i cors -> permitir conectar clientes que no pertenecen al mismo dominio.
+
+** Crear versiones en github **
+# git tag
+# git tag -a v1.0.0 -m "texto escribir"
+# git push --tags
+
+** Proyecto BandName **
+# npm i uuid -> dentro de bandNames-server
+# npm i socket.io-client -> para poder trabajar con sockets en react. Instalamos dentro del proyecto de react.
+# npm install chart.js --save -> en el proyecto de react.
+
+** Proyecto ticket **
+# Limpiar proyecto de react. Eliminamos: App.css, App.test.js, vaciamos el index.css, logo.svg, setupTests.js
+# Dentro del index.css añadimos -> @import '~antd/dist/antd.css';
+# npm i antd -> Para crear componentes personalizados (ant design). La instalación se realiza dentro del proyecto de react.
+# npm install --save @ant-design/icons -> La instalación se realiza dentro del proyecto de react.
+# npm install react-router-dom -> La instalación se realiza dentro del proyecto de react.
+# npm i uuid -> En el proyecto de ticket server.
+# npm i socket.io-client -> En el proyecto de react.
+# npm i cors -> En el proyecto de ticket server.
+
+** Proyecto mapas **
+# npm install mapbox-gl --save -> En el proyecto react
+# npm i uuid -> En el proyecto react
+# npm i rxjs -> Programación reactiva. En el proyecto react
+# npm i socket.io-client -> En el proyecto de react.
+
+** Rxjs (observable) **
+# Es util para subscribirnos por ejemplo a objetos y obtener en todo momento su valor.
+# El valor $ al final de la variable indica que es un observable.
+
+** Middleware **
+# Una función que se ejecuta antes que otra.
+
+** Proyecto chat completo **
+# npm i bcryptjs cors express-validator jsonwebtoken mongoose -> En el backend del chat.
+# npm install react-router-dom -> En el proyecto de react.
+# npm i sweetalert2 -> En el proyecto de react.
+# npm i socket.io-client -> En el proyecto de react.
+# Es importante que el socket.io del cliente y el servidor tengan la misma versión.
+# npm uninstall socket.io -> En el backend del chat.
+# npm i socket.io -> En el backend del chat.
+# Un reducer es una función pura que no debe tener interacciones del exterior. Todo debe procesarse en base el state y acciones.
+# npm i moment --save -> En el proyecto de react.
+# npm i react-scroll -> En el proyecto de react.
+
+
+
+
